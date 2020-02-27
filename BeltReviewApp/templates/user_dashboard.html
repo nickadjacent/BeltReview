@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'user_dashboard.css' %}">
+</head>
+
+<body id="wrapper">
+
+
+
+    <div>
+        <div class="header_content">
+            <h1>Welcome, {{ user.alias }}!</h1>
+        </div>
+        <div class="header_link"><a href="/add_book">Add Book and Review</a></div>
+        <div class="header_link"><a href="/logout">Logout</a></div>
+    </div>
+
+    <br>
+
+    <section style="float: left; width: 50%">
+        <h2>Recent Book Reviews:</h2>
+        <br>
+        <div>
+            <ul>
+                <li>
+                    <a href="/book_info">'The Greatest Salesman in the World'</a>
+                    <div>
+                        <p>Rating:
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </p>
+                    </div>
+                    <div style="width: 30%;">
+                        <p><a href="/user_page">'User'</a>says: 'description -> Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.
+                            Asperiores
+                            repudiandae eos totam optio nostrum necessitatibus ea veritatis officiis ipsum, voluptas,
+                            earum
+                            aliquid vero nesciunt veniam soluta dolore quasi incidunt cumque!'</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="/book_info">'The Greatest Salesman in the World'</a>
+                    <div>
+                        <p>Rating:</p>
+                    </div>
+                    <div style="width: 30%;">
+                        <p><a href="/user_page">'User'</a>says: 'description -> Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.
+                            Asperiores
+                            repudiandae eos totam optio nostrum necessitatibus ea veritatis officiis ipsum, voluptas,
+                            earum
+                            aliquid vero nesciunt veniam soluta dolore quasi incidunt cumque!'</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+    <section style="float: left;">
+        <h2>Other Books with Reviews:</h2>
+        <br>
+        <div>
+            <ul>
+                <li>
+                    <p><a href="/book_page">'Harry Potter: The Sorcerer's Stone</a></p>
+                </li>
+                <li>
+                    <p><a href="/book_page">'Harry Potter: The Sorcerer's Stone</a></p>
+                </li>
+                <li>
+                    <p><a href="/book_page">'Harry Potter: The Sorcerer's Stone</a></p>
+                </li>
+                <li>
+                    <p><a href="/book_page">'Harry Potter: The Sorcerer's Stone</a></p>
+                </li>
+                <li>
+                    <p><a href="/book_page">'Harry Potter: The Sorcerer's Stone</a></p>
+                </li>
+                <li>
+                    <p><a href="/book_page">'Harry Potter: The Sorcerer's Stone</a></p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div style="clear:both"></div>
+</body>
+
+</html>

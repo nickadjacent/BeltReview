@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User's Info</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'user_page.css' %}">
+</head>
+
+<body id="wrapper">
+    <div>
+        <div class="header_content"><a href="/user_dashboard">Home</a></div>
+        <div class="header_content"><a href="/add_book">Add Book and Review</a></div>
+        <div class="header_content"><a href="/logout">Logout</a></div>
+    </div>
+    <div>
+        <h2>User Alias: 'User's Alias'</h2>
+        <h4>Name: 'User Name'</h4>
+        <h4>Email: 'User Email'</h4>
+        <h4>Total Reviews: 'Number of Reviews'</h4>
+    </div>
+    <div>
+        <h4>Posted Reviews on the following books:</h4>
+        <ul style="list-style-type: none; text-indent: 2%;">
+            <li><a href="/book_info">'Title of Book'</a> </li>
+            <li><a href="/book_info">'Title of Book'</a> </li>
+            <li><a href="/book_info">'Title of Book'</a> </li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>

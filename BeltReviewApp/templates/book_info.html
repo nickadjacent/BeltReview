@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Info / Add a Review</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'book_info.css' %}">
+</head>
+
+<body id="wrapper">
+    <div>
+        <div class="header_content"><a href="/user_dashboard">Home</a></div>
+        <div class="header_content"><a href="/logout">Logout</a></div>
+    </div>
+    <div>
+        <h1>'Book Title'</h1>
+    </div>
+    <div>
+        <h3>'Book Author'</h3>
+    </div>
+
+    <br>
+
+    <section style="float: left; width: 50%">
+        <h2>Reviews:</h2>
+        <!-- start loop here -->
+        <hr>
+        <div>
+            <p style="text-indent: 4%;">Rating
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </p>
+            <p style="text-indent: 4%;">
+                <a href="/user_page">'User'</a>says: 'description -> Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit. Corporis cum vero, est aliquam voluptatibus error eum temporibus cumque doloribus doloremque
+                veniam fugiat magni inventore? Dicta totam obcaecati iusto enim at.'
+            </p>
+            <p style="text-indent: 4%;">Published on 'Date Published'</p>
+        </div>
+        <!-- end loop here -->
+        <hr>
+        <div>
+            <p style="text-indent: 4%;">Rating
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </p>
+            <p style="text-indent: 4%;">
+                <a href="/user_page">'User'</a>says: 'description -> Lorem ipsum dolor, sit amet consectetur
+                adipisicing
+                elit. Corporis cum vero, est aliquam voluptatibus error eum temporibus cumque doloribus doloremque
+                veniam fugiat magni inventore? Dicta totam obcaecati iusto enim at.'
+            </p>
+            <p style="text-indent: 4%;">Published on 'Date Published'</p>
+        </div>
+        <hr>
+        <div>
+            <p style="text-indent: 4%;">Rating
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </p>
+            <p style="text-indent: 4%;">
+                <a href="/user_page">'User'</a>says: 'description -> Lorem ipsum dolor, sit amet consectetur
+                adipisicing
+                elit. Corporis cum vero, est aliquam voluptatibus error eum temporibus cumque doloribus
+                doloremque
+                veniam fugiat magni inventore? Dicta totam obcaecati iusto enim at.'
+            </p>
+            <p style="text-indent: 4%;">Published on 'Date Published'</p>
+        </div>
+
+    </section>
+    <section style="float: left;">
+        <form action="/add_review" method="POST">
+            <p><label for="add_review">Add a Review:</label></p>
+            <p><input type="text" name="add_review"></input>
+                <p><label for="rating">Rating:
+                        <select name="rating" id="star_rating">
+                            <option value=""> -- Choose -- </option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select> stars.
+                    </label></p>
+        </form>
+    </section>
+    <div style="clear:both"></div>
+</body>
+
+</html>

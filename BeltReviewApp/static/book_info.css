@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+#wrapper{
+    width: 95%;
+    /* height: 800px; */
+    margin: 0px auto;
+
+}
+
+.header_content{
+    display: inline-block;
+    margin: 0px 5px;
+
+}
+
